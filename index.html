@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chennai Eastgate Trading Private Limited</title>
+  <meta name="description" content="Chennai Eastgate Trading Private Limited storefront for kitchenware, electronics, and artifacts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Chennai Eastgate home">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="./company-logo.png" alt="" />
+      </span>
+      <span class="brand-copy">
+        <strong>CHENNAI EASTGATE</strong>
+        <span>Trading Private Limited</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#shop">PRODUCTS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#account">TRACK ORDER</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Chennai Eastgate Trading Private Limited</p>
+        <h1>Professional commerce for kitchenware, electronics, and artifacts.</h1>
+        <p class="lede">
+          A clean, product-first storefront with branded merchandising, reliable checkout, and user login for order tracking.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#shop">Shop products</a>
+          <a class="btn btn-secondary" href="#account">Login to track order</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="brand-note">
+          <span class="badge">Brand story</span>
+          <p class="brand-note-lead">Chennai Eastgate Trading Private Limited is a professionally managed trading company headquartered in Chennai, India.</p>
+          <p class="brand-note-copy">We are engaged in the import, export, and domestic trading of a wide range of products across multiple categories, with a growing focus on e-commerce retail.</p>
+          <p class="brand-note-copy">We are committed to delivering quality, reliability, and value to our partners worldwide. With a strong focus on compliance, operational excellence, and customer satisfaction, we aim to build long-term, mutually beneficial relationships with suppliers, buyers, and stakeholders across the globe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT</p>
+        <h2>Trusted trading with a focused digital commerce presence.</h2>
+      </div>
+
+      <div class="company-detail">
+        <article class="detail-block">
+          <div class="section-heading compact">
+            <p class="eyebrow">VISION & MISSION</p>
+            <h3>Direction and purpose</h3>
+          </div>
+          <div class="spec-table">
+            <div class="spec-row spec-head">
+              <span>Vision</span>
+              <span>Mission</span>
+            </div>
+            <div class="spec-row">
+              <span>To be a globally trusted trading house, bridging markets with integrity, innovation, and supply chain excellence - delivering value across borders and industries.</span>
+              <span>To empower global commerce through reliable sourcing, timely delivery, and transparent partnerships - driven by operational excellence, regulatory compliance, and unwavering customer focus.</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop-highlight">
+      <div class="shop-highlight-card">
+        <div>
+          <p class="eyebrow">SHOP NOW</p>
+          <h2>Browse curated products across every category.</h2>
+          <p>
+            Discover practical kitchenware, dependable electronics, and carefully selected artifacts.
+            Use the search bar below to move quickly through the collection.
+          </p>
+        </div>
+        <a class="btn btn-primary shop-now-btn" href="#shop">SHOP NOW</a>
+      </div>
+    </section>
+
+    <section class="toolbar" id="shop" aria-label="Product filters">
+      <label>
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="Search products, brands, or specs" />
+      </label>
+      <label>
+        <span>Category</span>
+        <select id="categoryFilter">
+          <option value="all">All categories</option>
+          <option value="kitchenware">Kitchenware</option>
+          <option value="electronics">Electronics</option>
+          <option value="artifacts">Artifacts</option>
+        </select>
+      </label>
+      <label>
+        <span>Sort</span>
+        <select id="sortFilter">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="rating-desc">Rating</option>
+          <option value="stock-desc">Stock</option>
+        </select>
+      </label>
+      <label class="checkbox">
+        <input id="inStockOnly" type="checkbox" />
+        <span>In stock only</span>
+      </label>
+    </section>
+
+    <section class="catalog-layout">
+      <div class="catalog">
+        <div class="section-heading">
+          <p class="eyebrow">Featured products</p>
+          <h2>Browse the catalog</h2>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </div>
+
+      <aside class="side-panel">
+        <div class="panel-card" id="account">
+          <div class="section-heading compact">
+            <p class="eyebrow">Customer login</p>
+            <h3>Track your order</h3>
+          </div>
+          <form class="stack" id="loginForm">
+            <label>
+              <span>Email or phone</span>
+              <input type="text" id="loginId" placeholder="customer@example.com" />
+            </label>
+            <label>
+              <span>Order number</span>
+              <input type="text" id="loginOrderId" placeholder="EG-10421" />
+            </label>
+            <button class="btn btn-primary full" type="submit">Login</button>
+          </form>
+          <div class="notice-stack">
+            <div class="notice" id="loginStatus">Login to see your tracked order status.</div>
+            <div class="notice" id="trackingSummary">Order tracking is available for registered customers.</div>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <div class="section-heading compact">
+            <p class="eyebrow">Cart</p>
+            <h3>Shopping bag</h3>
+          </div>
+          <div id="cartItems" class="stack"></div>
+          <div class="panel-total">
+            <span>Total</span>
+            <strong id="cartTotal">Rs. 0</strong>
+          </div>
+          <button class="btn btn-primary full" id="checkoutButton" type="button">Place order</button>
+        </div>
+
+        <div class="panel-card subtle">
+          <div class="section-heading compact">
+            <p class="eyebrow">Wishlist</p>
+            <h3>Saved items</h3>
+          </div>
+          <div id="wishlistItems" class="stack small"></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <dialog id="productDialog" class="dialog">
+    <form method="dialog" class="dialog-card" id="dialogForm">
+      <button class="dialog-close" value="cancel" aria-label="Close dialog">x</button>
+      <div id="dialogContent"></div>
+      <div class="dialog-actions">
+        <button class="btn btn-secondary" value="cancel">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="checkoutDialog" class="dialog">
+    <form method="dialog" class="dialog-card checkout-dialog" id="checkoutForm">
+      <button class="dialog-close" value="cancel" aria-label="Close checkout">x</button>
+      <div class="section-heading compact">
+        <p class="eyebrow">Checkout</p>
+        <h3>Complete your order</h3>
+      </div>
+      <label>
+        <span>Customer name</span>
+        <input type="text" id="customerName" value="Jayaraj Yowan" />
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" id="customerEmail" value="customer@chennaieastgate.com" />
+      </label>
+      <label>
+        <span>Phone number</span>
+        <input type="tel" id="customerPhone" value="+91 90000 12345" />
+      </label>
+      <label>
+        <span>Shipping address</span>
+        <textarea id="customerAddress" rows="3">Chennai, Tamil Nadu</textarea>
+      </label>
+      <label>
+        <span>Payment method</span>
+        <select id="paymentMethod">
+          <option>Razorpay</option>
+          <option>Stripe</option>
+          <option>PayPal</option>
+          <option>Cash on Delivery</option>
+        </select>
+      </label>
+      <div class="panel-total">
+        <span>Order total</span>
+        <strong id="checkoutTotal">Rs. 0</strong>
+      </div>
+      <button class="btn btn-primary full" id="confirmOrderButton" value="default" type="submit">Confirm order</button>
+    </form>
+  </dialog>
+
+  <dialog id="receiptDialog" class="dialog">
+    <form method="dialog" class="dialog-card receipt-card" id="receiptForm">
+      <button class="dialog-close" value="cancel" aria-label="Close receipt">x</button>
+      <div class="section-heading compact">
+        <p class="eyebrow">Payment Receipt</p>
+        <h3>Order confirmed</h3>
+      </div>
+      <div id="receiptContent"></div>
+      <div class="dialog-actions">
+        <button class="btn btn-secondary" id="printReceiptButton" value="cancel" type="button">Print receipt</button>
+        <button class="btn btn-primary" value="cancel">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">Chennai Eastgate Trading Private Limited</p>
+        <h3>Professional trading and retail commerce.</h3>
+      </div>
+      <div>
+        <p>
+          Chennai Eastgate Trading Private Limited operates with a focus on reliability, compliance, and customer satisfaction
+          across its trading and e-commerce activities.
+        </p>
+      </div>
+      <div>
+        <p>Head Office: Chennai, India</p>
+        <p>Email: support@chennaieastgate.com</p>
+        <p>Website: chennaieastgate.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./shared.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chennai Eastgate Admin Login</title>
+  <meta name="description" content="Admin login for Chennai Eastgate Trading Private Limited." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Return to storefront">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="./company-logo.png" alt="" />
+        </span>
+        <span class="brand-copy">
+          <strong>CHENNAI EASTGATE</strong>
+          <span>Trading Private Limited</span>
+        </span>
+      </a>
+    </header>
+
+    <section class="login-card">
+      <div>
+        <p class="eyebrow">Admin access</p>
+        <h1>Sign in to the admin console</h1>
+        <p class="lede">Use the admin credentials to unlock catalog management, orders, customers, and inventory.</p>
+      </div>
+
+      <div class="admin-shell-note">
+        <p><strong>Username:</strong> admin@chennaieastgate.com</p>
+        <p><strong>Password:</strong> Eastgate@2026</p>
+      </div>
+
+      <form id="adminLoginForm" class="stack">
+        <label>
+          <span>Admin email</span>
+          <input type="email" id="adminEmail" placeholder="admin@chennaieastgate.com" />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="adminPassword" placeholder="Eastgate@2026" />
+        </label>
+        <div class="dialog-actions">
+          <button class="btn btn-primary" type="submit">Sign in</button>
+          <a class="btn btn-secondary" href="./index.html">Back to storefront</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="./shared.js"></script>
+  <script src="./admin-login.js"></script>
+</body>
+</html>

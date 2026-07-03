@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Orders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="admin-page" data-view="orders">
+  <header class="topbar">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"><img src="./company-logo.png" alt="" /></span><span class="brand-copy"><strong>CHENNAI EASTGATE</strong><span>Trading Private Limited | Admin</span></span></a>
+    <nav class="admin-toplinks">
+      <a href="./admin.html">Dashboard</a><a href="./admin-products.html">Products</a><a href="./admin-categories.html">Categories</a><a href="./admin-orders.html">Orders</a><a href="./admin-customers.html">Customers</a><a href="./index.html">Storefront</a><a href="./admin-login.html" data-action="logout">Logout</a>
+    </nav>
+  </header>
+  <main class="page admin-page">
+    <section class="admin-grid">
+      <div class="panel-card">
+        <div class="section-heading compact"><p class="eyebrow">Orders</p><h2>Order workflow</h2></div>
+        <div class="table-list" id="ordersTable"></div>
+      </div>
+      <div class="panel-card">
+        <div class="section-heading compact"><p class="eyebrow">Store Sync</p><h3>Cart snapshot</h3></div>
+        <div class="table-list" id="cartTable"></div>
+      </div>
+    </section>
+    <section class="admin-grid" style="margin-top: 14px;">
+      <div class="panel-card">
+        <div class="section-heading compact"><p class="eyebrow">Store Sync</p><h3>Wishlist snapshot</h3></div>
+        <div class="table-list" id="wishlistTable"></div>
+      </div>
+      <div class="panel-card">
+        <div class="section-heading compact"><p class="eyebrow">Metrics</p><h3>Order summary</h3></div>
+        <div class="metrics-grid" id="adminMetrics"></div>
+      </div>
+    </section>
+  </main>
+  <script src="./shared.js"></script>
+  <script src="./admin.js"></script>
+</body>
+</html>

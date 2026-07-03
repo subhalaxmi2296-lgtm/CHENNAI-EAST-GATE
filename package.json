@@ -1,0 +1,14 @@
+{
+  "name": "chennai-eastgate-commerce",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chennai Eastgate Trading e-commerce storefront and admin dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chennai Eastgate Admin Dashboard</title>
+  <meta name="description" content="Admin dashboard for Chennai Eastgate Trading Private Limited." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="admin-page" data-view="dashboard">
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="Return to storefront">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="./company-logo.png" alt="" />
+      </span>
+      <span class="brand-copy">
+        <strong>CHENNAI EASTGATE</strong>
+        <span>Trading Private Limited | Admin dashboard</span>
+      </span>
+    </a>
+
+    <nav class="admin-toplinks">
+      <a href="./admin-dashboard.html">Dashboard</a>
+      <a href="./admin-products.html">Products</a>
+      <a href="./admin-categories.html">Categories</a>
+      <a href="./admin-orders.html">Orders</a>
+      <a href="./admin-customers.html">Customers</a>
+      <a href="./index.html">Storefront</a>
+      <a href="./admin-login.html" data-action="logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="page admin-page">
+    <section class="hero admin-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Restricted access</p>
+        <h1>Admin control room for sales, catalog, and order operations.</h1>
+        <p class="lede">
+          Use the dashboard to jump into product management, category setup, order workflow, and customer records.
+          Changes made from admin flow directly into the storefront store.
+        </p>
+      </div>
+
+      <div class="hero-panel">
+        <div class="admin-shell-note">
+          <p class="badge">Quick access</p>
+          <p>Manage products, categories, orders, customers, carts, and wishlists from dedicated pages.</p>
+        </div>
+        <div class="admin-toplinks">
+          <a href="./admin-products.html">Products</a>
+          <a href="./admin-categories.html">Categories</a>
+          <a href="./admin-orders.html">Orders</a>
+          <a href="./admin-customers.html">Customers</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics-grid" id="adminMetrics"></section>
+
+    <section class="admin-grid">
+      <div class="panel-card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Store Sync</p>
+          <h3>Live storefront snapshots</h3>
+        </div>
+        <div class="table-list" id="cartTable"></div>
+      </div>
+
+      <div class="panel-card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Store Sync</p>
+          <h3>Wishlist snapshot</h3>
+        </div>
+        <div class="table-list" id="wishlistTable"></div>
+      </div>
+    </section>
+
+    <section class="admin-grid" style="margin-top: 14px;">
+      <div class="panel-card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Operations</p>
+          <h3>Recent orders</h3>
+        </div>
+        <div class="table-list" id="ordersTable"></div>
+      </div>
+
+      <div class="panel-card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Operations</p>
+          <h3>Customer records</h3>
+        </div>
+        <div class="table-list" id="customersTable"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./shared.js"></script>
+  <script src="./admin.js"></script>
+</body>
+</html>
