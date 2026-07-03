@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wishlist - Chennai Eastgate</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="hamburger" id="hamburgerButton" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a class="brand" href="./index.html">
+      <span class="brand-mark"><img src="./company-logo.png" alt=""/></span>
+      <span class="brand-copy"><strong>CHENNAI EASTGATE</strong><span>Wishlist</span></span>
+    </a>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+      <a href="./index.html#shop">Products</a>
+      <a href="./index.html#about">About</a>
+      <a href="./track-order.html">Track order</a>
+      <a href="./cart.html">Cart</a>
+      <a href="./wishlist.html">Wishlist</a>
+      <a href="./order-details.html">Order details</a>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="section-heading">
+      <h2>Your wishlist</h2>
+      <p class="lede">Saved items are shown here so you can review and add them to the cart later.</p>
+    </section>
+    <div id="wishlistPage" class="panel-card">
+      <div class="empty-state">Wishlist page placeholder. Wishlist UI will load here.</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Return to <a href="./index.html">storefront</a>.</p>
+  </footer>
+
+  <script src="./shared.js"></script>
+  <script src="./nav.js"></script>
+  <script src="./wishlist.js"></script>
+</body>
+</html>

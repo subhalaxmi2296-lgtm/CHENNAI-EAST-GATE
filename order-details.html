@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Order Details - Chennai Eastgate</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="hamburger" id="hamburgerButton" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a class="brand" href="./index.html">
+      <span class="brand-mark"><img src="./company-logo.png" alt=""/></span>
+      <span class="brand-copy"><strong>CHENNAI EASTGATE</strong><span>Order details</span></span>
+    </a>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+      <a href="./index.html#shop">Products</a>
+      <a href="./index.html#about">About</a>
+      <a href="./track-order.html">Track order</a>
+      <a href="./cart.html">Cart</a>
+      <a href="./wishlist.html">Wishlist</a>
+      <a href="./order-details.html">Order details</a>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="section-heading">
+      <h2>Order details</h2>
+      <p class="lede">View a specific order receipt, items, tracking, and status.</p>
+    </section>
+    <div id="orderDetailsPage" class="panel-card">
+      <div class="empty-state">Order details placeholder. Select an order to view its details.</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Return to <a href="./index.html">storefront</a>.</p>
+  </footer>
+
+  <script src="./shared.js"></script>
+  <script src="./nav.js"></script>
+  <script src="./order-details.js"></script>
+</body>
+</html>

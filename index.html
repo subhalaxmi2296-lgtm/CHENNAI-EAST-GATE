@@ -12,6 +12,7 @@
 </head>
 <body>
   <header class="topbar">
+    <button class="hamburger" id="hamburgerButton" aria-label="Open menu" aria-expanded="false">☰</button>
     <a class="brand" href="#home" aria-label="Chennai Eastgate home">
       <span class="brand-mark" aria-hidden="true">
         <img src="./company-logo.png" alt="" />
@@ -28,6 +29,18 @@
       <a href="#account">TRACK ORDER</a>
     </nav>
   </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+      <a href="#shop">Products</a>
+      <a href="#about">About</a>
+      <a href="track-order.html">Track order</a>
+      <a href="cart.html">Cart</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="order-details.html">Order details</a>
+    </div>
+  </nav>
 
   <main class="page">
     <section class="hero" id="home">
@@ -265,6 +278,7 @@
   </footer>
 
   <script src="./shared.js"></script>
+  <script src="./nav.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>
